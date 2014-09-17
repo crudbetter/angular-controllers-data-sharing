@@ -1,9 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="dataSharing">
   <head>
     <title>angular-controllers-data-sharing</title>
   </head>
   <body>
+  	<div ng-controller="ListCtrl">
+      <ul>
+      <li ng-repeat="article in articles" ng-click="selectArticle(article)">{{article.title}}</li>
+      </ul>
+    </div>
+
+    <div ng-controller="DetailCtrl">
+      <dl>
+        <dt>Title:</dt>
+        <dd>{{article.title}}</dd>
+        <dt>Author:</dt>
+        <dd>{{article.author}}</dd>
+        <dt>Published date:</dt>
+        <dd>{{article.date}}</dd>
+        <dt>Excerpt</dt>
+        <dd>{{article.excerpt}}</dd>
+      </dl>
+    </div>
+    
     <script src="bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
     <script src="controllers.js"></script>
