@@ -1,7 +1,7 @@
 angular-controllers-data-sharing
 ================================
 
-Reference repository to accompany [blog article]() on sharing data between AngularJS controllers.
+Reference repository to accompany [blog article](http://crudbetter.com/angularjs-controllers-share-data/) on sharing data between AngularJS controllers.
 
 Branch per option explored in article:
 - `$rootScope.$broadcast`
