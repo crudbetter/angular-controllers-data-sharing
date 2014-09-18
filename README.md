@@ -12,5 +12,7 @@ Branch per option explored in article:
 
 ### Usage
 
-- Check out a branch and run `npm start`
+- `git clone https://github.com/crudbetter/angular-controllers-data-sharing.git`
+- `git checkout origin/sharedService-dot`
+- `npm start`
 - Browse to http://localhost:8000/app/index.html
