@@ -4,11 +4,14 @@
     <title>angular-controllers-data-sharing</title>
   </head>
   <body>
+    <h1>Exploring sharing data between AngularJS controllers</h1>
+
     <div ng-controller="ListCtrl">
        <ul>
           <li ng-repeat="article in articles" ng-click="selectArticle(article)">{{article.title}}</li>
        </ul>
     </div>
+
     <div ng-controller="DetailCtrl">
       <button type="button" ng-click="articles.someCompletelyUnrelatedFunctionality()">Click Me!</button>
       <dl>
@@ -21,8 +24,9 @@
         <dt>Excerpt</dt>
         <dd>{{articles.selectedArticle.excerpt}}</dd>
       </dl>
-    </div> 
-    <script src="bower_components/angular/angular.js"></script>
+    </div>
+     
+    <script src="../bower_components/angular/angular.js"></script>
     <script src="app.js"></script>
     <script src="controllers.js"></script>
     <script src="services.js"></script>
