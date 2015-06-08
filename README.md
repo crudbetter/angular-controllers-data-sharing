@@ -3,7 +3,8 @@ angular-controllers-data-sharing
 
 Reference repository to accompany [blog article](http://crudbetter.com/angularjs-controllers-share-data/) on sharing data between AngularJS controllers.
 
-Branch per option explored in article:
+Demo per option explored in the article:
+
 - `$rootScope.$broadcast`
 - shared service watching
 - shared service "dot" watching
@@ -13,6 +14,9 @@ Branch per option explored in article:
 ### Usage
 
 - `git clone https://github.com/crudbetter/angular-controllers-data-sharing.git`
-- `git checkout origin/sharedService-dot`
 - `npm start`
-- Browse to http://localhost:8000/app/index.html
+- Browse to one of:
+  1. http://localhost:8000/app/rootScopeBroadcast/index.html
+  2. http://localhost:8000/app/sharedService/index.html
+  3. http://localhost:8000/app/sharedServiceDot/index.html
+  4. http://localhost:8000/app/sharedServiceGetter/index.html
