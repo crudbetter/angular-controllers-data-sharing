@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="dataSharing">
+  <head>
+    <title>angular-controllers-data-sharing</title>
+  </head>
+  <body>
+    <h1>Exploring sharing data between AngularJS controllers</h1>
+
+    <div ng-controller="ListCtrl">
+       <ul>
+          <li ng-repeat="article in articles" ng-click="selectArticle(article)">{{article.title}}</li>
+       </ul>
+    </div>
+
+    <div ng-controller="DetailCtrl">
+      <button type="button" ng-click="articles.someCompletelyUnrelatedFunctionality()">Click Me!</button>
+      <dl>
+        <dt>Title:</dt>
+        <dd>{{articles.selectedArticle.title}}</dd>
+        <dt>Author:</dt>
+        <dd>{{articles.selectedArticle.author}}</dd>
+        <dt>Published date:</dt>
+        <dd>{{articles.selectedArticle.date}}</dd>
+        <dt>Excerpt</dt>
+        <dd>{{articles.selectedArticle.excerpt}}</dd>
+      </dl>
+    </div>
+     
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script src="services.js"></script>
+  </body>
+</html>
