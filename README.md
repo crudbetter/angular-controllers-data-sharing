@@ -306,10 +306,9 @@ And for completeness and privacy reasons I would add a setter method too.
     };
 ```
 
- [1]: https://github.com/crudbetter/angular-controllers-data-sharing
- [2]: http://crudbetter.com/wp-content/uploads/2014/09/watch-service-selected-article.png
- [3]: http://crudbetter.com/wp-content/uploads/2014/09/instantiation-order.png
+ [2]: watch-service-selected-article.png
+ [3]: instantiation-order.png
  [4]: http://www.youtube.com/watch?feature=player_detailpage&v=ZhfUv0spHCY#t=1758s
  [5]: https://twitter.com/mhevery
- [6]: http://crudbetter.com/wp-content/uploads/2014/09/watch-service-selected-article-dot.png
- [7]: http://crudbetter.com/wp-content/uploads/2014/09/watch-service-selected-article-getter.png
+ [6]: watch-service-selected-article-dot.png
+ [7]: watch-service-selected-article-getter.png
